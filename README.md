@@ -8,13 +8,13 @@ access authority to your work, and streaming out logs --- all in one
 command: `super run`.
 
 <img alt="Animated GIF of simple example"
-src="docs/blogs/1-Super-Overview/super-lscpu-100-with-progress.gif">
-
-<img alt="Animated GIF of super copy" src="docs/blogs/1-Super-Overview/super-cp-5-with-progress.gif" align="right">
+src="docs/blogs/1-Super-Overview/super-lscpu-100-with-progress.gif" align="center">
 
 Super knows how to track the progress of any job against your Cloud
 data. You will know, without any extra work, how much of your Cloud
 input files has been processed!
+
+<img alt="Animated GIF of super copy" src="docs/blogs/1-Super-Overview/super-cp-5-with-progress.gif" align="right" width="650">
 
 Super uses containers running in IBM Cloud [Code
 Engine](https://www.ibm.com/cloud/code-engine) as the compute layer,
