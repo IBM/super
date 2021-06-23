@@ -60,14 +60,19 @@ Model name:                      Intel Core Processor (Broadwell, IBRS)
 ### Specifying CPU and Memory Allocations
 
 Your Cloud pipelines are given a default allocation of CPU shares and
-phystical memory: 1 (whole) CPU and 1024Mi of memory.  If the default
+phystical memory: 1 (whole) CPU and 4G of memory.  If the default
 settings prove insufficient for your needs, then the `--cpu` and
 `--memory` options can help:
 
 ```sh
-super run --cpu 4 --memory=2048Mi -- lscpu
+super run --cpu 4 --memory=8G -- lscpu
 ```
 
+> Notes: Your memory allocation request must be specified in "M/G"
+units, not "Mi/Gi" units. Only certain cpu-to-memory ratios are
+supported, due to the way IBM CodeEngine is designed. Consult [this
+page](https://cloud.ibm.com/docs/codeengine?topic=codeengine-mem-cpu-combo)
+for a list of supported combinations.
 
 
 <!--## Others
