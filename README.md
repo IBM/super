@@ -1,3 +1,5 @@
+#### [Examples](#examples)  | [Tutorials](#tutorials) | [Blogs](#blogs) | [Installation](#installation)
+
 # Super: A CLI for the Serverless Supercomputer
 
 **Super** runs a normal UNIX command line against Cloud data, using
@@ -6,8 +8,7 @@ amount of compute, memory, and disk capacity, scheduling your jobs,
 granting the needed data access authority to your work, and streaming
 out logs &mdash; all in one command: `super run`.
 
-<img title="Super takes a normal UNIX command line, and runs it in parallel, in the Cloud" alt="Super auto-scales normal UNIX command lines"
-src="docs/blogs/1-Super-Overview/super-lscpu-100-with-progress.gif" align="right" width="550">
+<img title="Super takes a normal UNIX command line, and runs it in parallel, in the Cloud" alt="Super auto-scales normal UNIX command lines" src="docs/blogs/1-Super-Overview/super-lscpu-100-with-progress.gif" align="right" width="550">
 
 Super also automatically injects logic to track the progress of
 **any** job against your Cloud data. You get helpful progress bars for
@@ -24,7 +25,7 @@ Storage](https://www.ibm.com/cloud/object-storage).
 
 ```sh
 # Super can run a fixed number of UNIX command lines, in the Cloud
-super run -p10 -- echo $JOB_INDEX
+super run -p10 -- printenv JOB_INDEX
 ```
 
 ```sh
@@ -57,7 +58,7 @@ super run -- cat /s3/ibm/us/south/src/*.txt.gz | /s3/ibm/us/south/bin/myAnalysis
 
 ## Tutorials
 
-- [Getting to Know Super](docs/tutorial/README.md#readme)
+- [Getting to Know Super](docs/tutorial/basics/#readme)
 
 ## Blogs
 
@@ -66,8 +67,10 @@ super run -- cat /s3/ibm/us/south/src/*.txt.gz | /s3/ibm/us/south/bin/myAnalysis
 
 ## Installation
 
+<img title="The super up command helps you with prerequisites" alt="The super up command helps you with prerequisites" src="docs/tutorial/basics/super-up.png" align="right" width="400">
+
 The latest build of Super is available
-[here](https://github.com/super/releases). After you have downloaded
+[here](https://github.com/IBM/super/releases). After you have downloaded
 your release:
 
 ```sh
@@ -80,11 +83,11 @@ You should now see usage information for Super, including the main
 sub-commands:
 - [`super up`](docs/commands/super-up.md)
 - [`super run`](docs/commands/super-run.md)
-- [`super dashboard`](docs/tutorial/super-dashboard.md)
-- [`super browse`](docs/tutorial/super-browse.md)
+- [`super dashboard`](docs/tutorial/basics/super-dashboard.md)
+- [`super browse`](docs/tutorial/basics/super-browse.md)
 
 We suggest first trying [`super up`](docs/commands/super-up.md), which
 will validate your prerequisites. If you are good to go, then you can
 try `super run -p5 -- echo hello`, which will execute that command as
 five Cloud jobs. If this all looks good, then proceed to the
-[**Super Tutorial**](docs/tutorial/README.md#readme).
+[**Getting to Know Super**](docs/tutorial/basics#readme) tutorial.
