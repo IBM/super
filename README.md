@@ -31,8 +31,28 @@ super run -p10 -- echo $JOB_INDEX
 # Super can auto-scale across a glob pattern of Cloud data
 # If the *.txt.gz matches 50 files, Super will spawn <= 50 Cloud jobs
 # to host the copy. No need to set up VMs or containers or transfer
-# the data to and from your laptop
+# the data to and from your laptop.
 super run -- cp /s3/ibm/us/south/src/*.txt.gz /s3/ibm/ap/jp/dst
+```
+
+```sh
+# Super pipelines are normal UNIX pipelines; | works as expected, but
+# against Cloud data, using Cloud compute. This again will spawn N jobs
+# depending on the number of glob matches to the input files.
+super run -- cat /s3/ibm/us/south/src/*.txt.gz | gunzip -c - | grep hello
+```
+
+```sh
+# Super pipelines also handle redirects to Cloud storage. This example will
+# create N output files in the given dst buckets.
+super run -- cat /s3/ibm/us/south/src/*.txt.gz | ... > /s3/ibm/us/south/dst
+```
+
+```sh
+# You may also inject custom scripts into the running jobs
+super mkdir /s3/ibm/us/south/bin
+super cp myAnalysis.sh /s3/ibm/us/south/bin
+super run -- cat /s3/ibm/us/south/src/*.txt.gz | /s3/ibm/us/south/bin/myAnalysis.sh > /s3/ibm/us/south/dst
 ```
 
 ## Tutorials
