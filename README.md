@@ -41,7 +41,7 @@ super run -p10 -- printenv JOB_INDEX
 
 super mkdir /s3/ibm/default/superfun
 super run -- cp \
-  /s3/aws/commoncrawl/crawl-data/CC-MAIN-2021-21/segments/1620243992721.31/wet/*-0000{1,2,3}.warc.wet.gz \
+  '/s3/aws/commoncrawl/crawl-data/CC-MAIN-2021-21/segments/1620243992721.31/wet/*-0000{1,2,3}.warc.wet.gz' \
   /s3/ibm/default/superfun
 ```
 
