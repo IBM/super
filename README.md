@@ -46,14 +46,14 @@ super run -- cat /s3/ibm/us/south/src/*.txt.gz | gunzip -c - | grep hello
 ```sh
 # Super pipelines also handle redirects to Cloud storage. This example will
 # create N output files in the given dst buckets.
-super run -- cat /s3/ibm/us/south/src/*.txt.gz | ... > /s3/ibm/us/south/dst
+super run -- gunzip -c /s3/ibm/us/south/src/*.txt.gz | ... > /s3/ibm/us/south/dst
 ```
 
 ```sh
 # You may also inject custom scripts into the running jobs
 super mkdir /s3/ibm/us/south/bin
 super cp myAnalysis.sh /s3/ibm/us/south/bin
-super run -- cat /s3/ibm/us/south/src/*.txt.gz | /s3/ibm/us/south/bin/myAnalysis.sh > /s3/ibm/us/south/dst
+super run -- gunzip -c /s3/ibm/us/south/src/*.txt.gz | /s3/ibm/us/south/bin/myAnalysis.sh > /s3/ibm/us/south/dst
 ```
 
 ## Tutorials
