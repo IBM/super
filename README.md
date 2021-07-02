@@ -44,6 +44,9 @@ case, the glob will expand to 3 files, hence Super will spawn <= 3
 Cloud jobs to host the copy. No need to set up VMs nor to transfer the
 data to and from your laptop.
 
+You may copy your files to any `/s3/...` path. Here, we use the
+convenience `/s3/ibm/tmp` path that Super provides.
+
 ```sh
 super run -- cp \
   '/s3/aws/commoncrawl/crawl-data/CC-MAIN-2021-21/segments/1620243992721.31/wet/*-0000{1,2,3}.warc.wet.gz' \
@@ -60,8 +63,7 @@ pipes `|`, but against Cloud data and compute.  This again will spawn
 using grep and wc in the Cloud to compute a partial sum of matches.
 
 ```sh
-super run -- \
-  'cat /s3/ibm/tmp/*.wet.gz | gunzip -c - | grep "WARC-Type: conversion" | wc -l'
+super run -- 'cat /s3/ibm/tmp/*.wet.gz | gunzip -c - | grep "WARC-Type: conversion" | wc -l'
 [Job 1] 40711
 [Job 2] 40880
 [Job 3] 40681
@@ -96,10 +98,11 @@ super run -- 'gunzip -c /s3/ibm/tmp/*.gz | ... > /s3/ibm/tmp/dst'
 
 ### Example 6
 
-```sh
-# You may also inject custom scripts into the running jobs
-# >>> NOTE: choose your own bucket name, instead of using "dst"
+You may also inject custom scripts into the running jobs. You may use
+any Cloud bucket to store your binaries. Here, we use the convenience
+path `/s3/ibm/bin` that Super provides.
 
+```sh
 super mkdir /s3/ibm/tmp/dst
 super cp myAnalysis.sh /s3/ibm/bin
 super run -- \
