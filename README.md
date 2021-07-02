@@ -29,7 +29,10 @@ Using the -p option, Super can run a fixed number of UNIX command
 lines, in the Cloud.
 
 ```sh
-super run -p10 -- printenv JOB_INDEX
+super run -p3 -- printenv JOB_INDEX
+[Job 1] 1
+[Job 2] 2
+[Job 3] 3
 ```
 
 ### Example 2
