@@ -21,7 +21,7 @@ Engine](https://www.ibm.com/cloud/code-engine) with Cloud data in any
 S3 provider, such as [IBM Cloud Object
 Storage](https://www.ibm.com/cloud/object-storage).
 
-## Examples
+### Example 1
 
 <img src="docs/images/runvis1.png" align="left" height="75">
 
@@ -32,7 +32,7 @@ lines, in the Cloud.
 super run -p10 -- printenv JOB_INDEX
 ```
 
----
+### Example 2
 
 <img src="docs/images/runvis2.png" align="left" height="85">
 
@@ -47,7 +47,7 @@ super run -- cp \
   /s3/ibm/tmp
 ```
 
----
+### Example 3
 
 <img src="docs/images/runvis3.png" align="left" height="85">
 
@@ -64,7 +64,7 @@ super run -- \
 [Job 3] 40681
 ```
 
----
+### Example 4
 
 <img src="docs/images/runvis4.png" align="left" height="85">
 
@@ -79,7 +79,7 @@ super run -- \
 122272
 ```
 
----
+### Example 5
 
 Super pipelines also handle redirects to Cloud storage. This example
 will redirect the output to N output files in the given dst bucket.
@@ -91,7 +91,7 @@ super mkdir /s3/ibm/tmp/dst
 super run -- 'gunzip -c /s3/ibm/tmp/*.gz | ... > /s3/ibm/tmp/dst'
 ```
 
----
+### Example 6
 
 ```sh
 # You may also inject custom scripts into the running jobs
