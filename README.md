@@ -46,7 +46,8 @@ Cloud storage.
 ## Blogs
 
 - [Exploring Big Data with a CLI](https://medium.com/the-graphical-terminal/exploring-big-data-with-a-cli-59af31d38756)
-- [Bash the Cloud](docs/blogs/1-Super-Overview/README.md#readme)
+- [Bash the Cloud](docs/blogs/1-Super-Overview#readme)
+- [Analyzing CommonCrawl with Bash](docs/blogs/2-Super-CommonCrawl#readme)
 
 ## Installation
 
