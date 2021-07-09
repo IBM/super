@@ -1,4 +1,4 @@
-# Super Example 2
+# Super Example 2: Auto-scaling across a set of Cloud Data
 
 <img src="images/runvis2.png" align="left" height="150">
 
