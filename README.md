@@ -21,8 +21,8 @@ Engine](https://www.ibm.com/cloud/code-engine) with Cloud data in any
 S3 provider, such as [IBM Cloud Object
 Storage](https://www.ibm.com/cloud/object-storage).
 
+<a name="examples"></a>
 ## Examples of Super's Flexibility
-<a name="examples></a>
 
 Using Super, you may pipe data through Cloud-based pipelines in a
 variety of ways. You may auto-scale across input Cloud data. You may
