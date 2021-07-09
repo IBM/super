@@ -8,13 +8,13 @@ amount of compute, memory, and disk capacity, scheduling your jobs,
 granting the needed data access authority to your work, and streaming
 out logs &mdash; all in one command: `super run`.
 
-<img title="Super takes a normal UNIX command line, and runs it in parallel, in the Cloud" alt="Super auto-scales normal UNIX command lines" src="docs/blogs/1-Super-Overview/super-lscpu-100-with-progress.gif" align="right" width="550">
+<img title="Super takes a normal UNIX command line, and runs it in parallel, in the Cloud" alt="Super auto-scales normal UNIX command lines" src="docs/blogs/1-Super-Overview/super-lscpu-100-with-progress.gif" align="right" width="600">
 
 Super also automatically injects logic to track the progress of
 **any** job against your Cloud data. You get helpful progress bars for
 free.
 
-<img title="Super can copy your Cloud data rapidly, across providers or regions within the Cloud" alt="Animated GIF of super copy" src="docs/blogs/1-Super-Overview/super-cp-5-with-progress.gif" align="right" width="550">
+<img title="Super can copy your Cloud data rapidly, across providers or regions within the Cloud" alt="Animated GIF of super copy" src="docs/blogs/1-Super-Overview/super-cp-5-with-progress.gif" align="right" width="600">
 
 Super links Cloud compute from [IBM Cloud Code
 Engine](https://www.ibm.com/cloud/code-engine) with Cloud data in any
@@ -29,8 +29,9 @@ variety of ways. You may auto-scale across input Cloud data. You may
 join the results of each parallel Cloud job and display the results on
 your local console. You may pipe this joined output into local
 pipelines. You may redirect the output of each Cloud job back into
-Cloud storage.  These pictograms illustrate some of the
-possibilities. Click on one for more detail on that use case.
+Cloud storage. 
+
+**Click on one of these images for more details on that use case.**
 
 [<img src="docs/examples/images/runvis1.png" height="104">](docs/examples/example1.md)
 [<img src="docs/examples/images/runvis2.png" height="104">](docs/examples/example2.md)
