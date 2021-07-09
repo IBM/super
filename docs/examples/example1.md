@@ -37,7 +37,7 @@ automatically operate in `-q` mode.
   you may do so via `stdin`.
 - **`-i`**: Specify a custom base Docker image. It is recommended that
   you extend `starpit/sh:0.0.5`.
-- **`-c`**, - **`-m`**: Specify a combination of CPU and memory
+- **`-c`**, **`-m`**: Specify a combination of CPU and memory
   allocation requests. Only [certain
   combinations](https://cloud.ibm.com/docs/codeengine?topic=codeengine-mem-cpu-combo)
   are supported.
