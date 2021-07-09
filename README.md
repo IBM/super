@@ -22,7 +22,7 @@ S3 provider, such as [IBM Cloud Object
 Storage](https://www.ibm.com/cloud/object-storage).
 
 <a name="examples"></a>
-## Examples of Super's Flexibility
+## Five Super Powers
 
 Using Super, you may pipe data through Cloud-based pipelines in a
 variety of ways. You may auto-scale across input Cloud data. You may
