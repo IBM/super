@@ -7,17 +7,8 @@ run`**.  Using the **`-p`** option to `super run`, Super can run a
 fixed number of UNIX command lines, in the Cloud. The output of the
 `N` jobs will be joined and flowed to `stdout`.
 
-To help distinguish the output flowing from many concurrent jobs, the
-log lines emitted by a job with job index `k` are prefixed by `[Job
-k]`. 
-
-- You may specify **`-q`** if you wish only to see the output of the
-jobs. If you pipe the output of `super run` to other commands on your
-laptop, Super will automatically operate in `-q` mode.
-- You may also specify **`-g`** if you need to debug the output at a
-finer level.
-- Via the **`-f`** option, you may provide your pipeline as a file,
-  and via `-f -` you may do so via `stdin`.
+<br>
+<br>
 
 ## Example
 
@@ -30,7 +21,26 @@ super run -p3 -- printenv JOB_INDEX
 
 Here we specified `-p3`, and printed out a convenience environment
 variable `JOB_INDEX` inside of each Cloud job. The output flows to our
-terminal.
+terminal. To help distinguish the output flowing from many concurrent
+jobs, the log lines emitted by a job with job index `k` are prefixed
+by `[Job k]`.
+
+## Options for `super run`
+
+- **`-p`**: Use a fixed number of jobs.
+- **`-q`**: Do not show the `[Job k]` prefix. If you pipe the output
+of `super run` to other commands on your laptop, Super will
+automatically operate in `-q` mode.
+- **`-g`**: Add extra debugging information to the output of `super
+  run`.
+- **`-f`**: You may provide your pipeline as a file, and via `-f -`
+  you may do so via `stdin`.
+- **`-i`**: Specify a custom base Docker image. It is recommended that
+  you extend `starpit/sh:0.0.5`.
+- **`-c`**, - **`-m`**: Specify a combination of CPU and memory
+  allocation requests. Only [certain
+  combinations](https://cloud.ibm.com/docs/codeengine?topic=codeengine-mem-cpu-combo)
+  are supported.
 
 ## Other Super Powers
 
