@@ -31,3 +31,10 @@ pipeline.
 super mkdir /s3/ibm/tmp/dst
 super run -- 'gunzip -c /s3/ibm/tmp/*.gz | ... > /s3/ibm/tmp/dst/out-$j.txt'
 ```
+
+
+<!--[<img src="images/runvis2.png" height="50">](example2.md)-->
+[<img src="images/runvis1.png" height="50">](example1.md)
+[<img src="images/runvis3.png" height="50">](example3.md)
+[<img src="images/runvis4.png" height="50">](example4.md)
+[<img src="images/runvis5.png" height="50">](example5.md)
