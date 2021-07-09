@@ -1,10 +1,13 @@
-# Super Example 5
+# Super Example 5: Injecting Cloud Binaries
 
-<img src="images/runvis5.png" align="left" height="100">
+<img src="images/runvis5.png" align="left" height="125">
 
 You may also inject custom scripts into the running jobs. You may use
 any Cloud bucket to store your binaries. Here, we use the convenience
 path `/s3/ibm/bin` that Super provides.
+
+<br>
+<br>
 
 ```sh
 super mkdir /s3/ibm/tmp/dst

@@ -1,4 +1,4 @@
-# Super Example 1
+# Super Example 1: Simple Scaling via `-p`
 
 <img src="images/runvis1.png" align="left" height="150">
 
