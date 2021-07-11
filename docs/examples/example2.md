@@ -36,9 +36,11 @@ super run -- cp \
   /s3/ibm/tmp
 ```
 
-> **Hint**: Make sure either to 'quote' or \-escape any glob
-> characters, such as `*` or `{`, to prevent your shell from
-> attempting to expand the patterns.
+<img title="Super can copy your Cloud data rapidly, across providers or regions within the Cloud" alt="Animated GIF of super copy" src="../blogs/1-Super-Overview/super-cp-5-with-progress.gif" align="right" width="600">
+
+> **Hint**: Make sure either to `'quote'` or `\`-escape any glob
+> characters, such as `*` or `{`, to prevent premature expansion of
+> the patterns.
 
 ### A Cloud /tmp
 
