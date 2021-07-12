@@ -44,8 +44,8 @@ automatically operate in `-q` mode.
 
 ## Other Super Powers
 
-<!--[<img src="images/runvis1.png" height="77">](example1.md)-->
-[<img src="images/runvis2.png" height="77">](example2.md)
-[<img src="images/runvis3.png" height="77">](example3.md)
-[<img src="images/runvis4.png" height="77">](example4.md)
-[<img src="images/runvis5.png" height="77">](example5.md)
+[<img src="images/runvis2.png" height="66">](example2.md)
+[<img src="images/runvis3.png" height="66">](example3.md)
+[<img src="images/runvis4.png" height="66">](example4.md)
+[<img src="images/runvis5.png" height="66">](example5.md)
+[<img src="images/runvis6.png" height="66">](example6.md)
