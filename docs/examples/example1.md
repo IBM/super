@@ -26,6 +26,7 @@ jobs, the log lines emitted by a job with job index `k` are prefixed
 by `[Job k]`.
 
 <a name="super-run-options">
+
 ## Options for `super run`
 
 - **`-p`**: Use a fixed number of jobs.
