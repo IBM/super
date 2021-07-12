@@ -36,8 +36,8 @@ super run -- \
 
 ## Other Super Powers
 
-<!--[<img src="images/runvis4.png" height="77">](example4.md)-->
-[<img src="images/runvis1.png" height="77">](example1.md)
-[<img src="images/runvis2.png" height="77">](example2.md)
-[<img src="images/runvis3.png" height="77">](example3.md)
-[<img src="images/runvis5.png" height="77">](example5.md)
+[<img src="images/runvis1.png" height="79">](example1.md)
+[<img src="images/runvis2.png" height="79">](example2.md)
+[<img src="images/runvis3.png" height="79">](example3.md)
+[<img src="images/runvis5.png" height="79">](example5.md)
+[<img src="images/runvis6.png" height="79">](example6.md)

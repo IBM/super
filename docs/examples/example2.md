@@ -67,8 +67,8 @@ super run -- 'gunzip -c /s3/ibm/tmp/*.gz | ... > /s3/ibm/tmp/dst/out-$j.txt'
 
 ## Other Super Powers
 
-<!--[<img src="images/runvis2.png" height="77">](example2.md)-->
-[<img src="images/runvis1.png" height="77">](example1.md)
-[<img src="images/runvis3.png" height="77">](example3.md)
-[<img src="images/runvis4.png" height="77">](example4.md)
-[<img src="images/runvis5.png" height="77">](example5.md)
+[<img src="images/runvis1.png" height="69">](example1.md)
+[<img src="images/runvis3.png" height="69">](example3.md)
+[<img src="images/runvis4.png" height="69">](example4.md)
+[<img src="images/runvis5.png" height="69">](example5.md)
+[<img src="images/runvis6.png" height="69">](example6.md)

@@ -22,22 +22,24 @@ S3 provider, such as [IBM Cloud Object
 Storage](https://www.ibm.com/cloud/object-storage).
 
 <a name="examples"></a>
-## Five Super Powers
+## Six Super Powers
 
 Using Super, you may pipe data through Cloud-based pipelines in a
-variety of ways. You may auto-scale across input Cloud data. You may
-join the results of each parallel Cloud job and display the results on
-your local console. You may pipe this joined output into local
-pipelines. You may redirect the output of each Cloud job back into
-Cloud storage. 
+variety of ways: fixed scaling; **auto-scale** across a set of input
+Cloud data; **join** the results of each parallel Cloud job and
+display the results on your local console; **redirect** output back
+into Cloud storage; execute pipelines **periodically**. All with
+familiar shell syntax and performance.
 
 **Click on one of these images for more details on that use case.**
+
 
 [<img src="docs/examples/images/runvis1.png" height="104">](docs/examples/example1.md)
 [<img src="docs/examples/images/runvis2.png" height="104">](docs/examples/example2.md)
 [<img src="docs/examples/images/runvis3.png" height="104">](docs/examples/example3.md)
 [<img src="docs/examples/images/runvis4.png" height="104">](docs/examples/example4.md)
 [<img src="docs/examples/images/runvis5.png" height="104">](docs/examples/example5.md)
+[<img src="docs/examples/images/runvis6.png" height="104">](docs/examples/example6.md)
 
 ## Tutorials
 
