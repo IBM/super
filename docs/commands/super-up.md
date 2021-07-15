@@ -3,6 +3,8 @@
 Currently, `super run` has a set of prerequisites on your Cloud
 configuration. The `super up` command can check these for you:
 
+<img title="The super up command helps you with prerequisites" alt="The super up command helps you with prerequisites" src="super-up.gif" align="right" width="400">
+
 ```sh
 super up
 

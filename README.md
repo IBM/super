@@ -1,4 +1,4 @@
-#### [Examples](#examples)  | [Tutorials](#tutorials) | [Blogs](#blogs) | [Installation](#installation)
+#### [Installation](#installation) | [Tutorials](#tutorials) | [Blogs](#blogs)
 
 # Super: A CLI for the Serverless Supercomputer
 
@@ -41,19 +41,9 @@ familiar shell syntax and performance.
 [<img src="docs/examples/images/runvis5.png" height="104">](docs/examples/example5.md)
 [<img src="docs/examples/images/runvis6.png" height="104">](docs/examples/example6.md)
 
-## Tutorials
-
-- [Getting to Know Super](docs/tutorial/basics/#readme)
-
-## Blogs
-
-- [Exploring Big Data with a CLI](https://medium.com/the-graphical-terminal/exploring-big-data-with-a-cli-59af31d38756)
-- [Bash the Cloud](docs/blogs/1-Super-Overview#readme)
-- [Analyzing CommonCrawl with Bash](docs/blogs/2-Super-CommonCrawl#readme)
-
 ## Installation
 
-<img title="The super up command helps you with prerequisites" alt="The super up command helps you with prerequisites" src="docs/tutorial/basics/super-up.png" align="right" width="400">
+<img title="The super up command helps you with prerequisites" alt="The super up command helps you with prerequisites" src="docs/commands/super-up.gif" align="right" width="400">
 
 The latest build of Super is available
 [here](https://github.com/IBM/super/releases). After you have downloaded
@@ -77,3 +67,13 @@ will validate your prerequisites. If you are good to go, then you can
 try `super run -p5 -- echo hello`, which will execute that command as
 five Cloud jobs. If this all looks good, then proceed to the
 [**Getting to Know Super**](docs/tutorial/basics#readme) tutorial.
+
+## Tutorials
+
+- [Getting to Know Super](docs/tutorial/basics/#readme)
+
+## Blogs
+
+- [Exploring Big Data with a CLI](https://medium.com/the-graphical-terminal/exploring-big-data-with-a-cli-59af31d38756)
+- [Bash the Cloud](docs/blogs/1-Super-Overview#readme)
+- [Analyzing CommonCrawl with Bash](docs/blogs/2-Super-CommonCrawl#readme)
