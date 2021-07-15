@@ -23,12 +23,12 @@ Storage](https://www.ibm.com/cloud/object-storage).
 <a name="examples"></a>
 ## Six Super Powers
 
-Using Super, you may pipe data through Cloud-based pipelines in a
-variety of ways: fixed scaling; **auto-scale** across a set of input
-Cloud data; **join** the results of each parallel Cloud job and
-display the results on your local console; **redirect** output back
-into Cloud storage; execute pipelines **periodically**. All with
-familiar shell syntax and performance.
+Super can process data via Cloud-based pipelines in a variety of ways:
+e.g. you may **auto-scale** across a set of input Cloud data, **join**
+the results of each parallel Cloud job and display the results on your
+local console, **redirect** output back into Cloud storage, or execute
+pipelines **periodically**. All with familiar shell syntax and
+performance.
 
 **Click on one of these images for more details on that use case.**
 
