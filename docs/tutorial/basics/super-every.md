@@ -7,7 +7,6 @@
 - [Injecting Custom Binaries](./super-cloudbin.md#readme)
 - [Examples of parallel analytics against CommonCrawl data](../blogs/2-Super-Examples/README.md#readme)
 - [Automating Periodic Tasks](./super-every.md) **[You are here]**
-- [The Super Dashboard](./super-dashboard.md#readme)
 
 # Automating Periodic Tasks with `super every`
 

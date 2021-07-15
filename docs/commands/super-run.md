@@ -27,17 +27,16 @@ Usage:
 
 Examples:
 super run -p 5 -- pwd                to test your setup; you should see the pwd output / repeated 5 times
-super run -p 20 -- 'echo $JOB_INDEX' the JOB_INDEX env. var. will be in the range 1..20 in this case     
-super examples                       provides more detailed examples                                      
+super run -p 20 -- 'echo $JOB_INDEX' the JOB_INDEX env. var. will be in the range 1..20 in this case
+super examples                       provides more detailed examples
 
 Options:
--f        Input file; use - for stdin                                                 
--i        Use a custom docker image default: starpit/sh:0.0.5                         
--p        Repeat a given pipeline N times default: number of glob matches             
--g        Emit more debugging output from the cloud-based jobs                        
--q        Emit only pipeline output, e.g. for piping into other tasks                 
---db      Pop up a window to track pipeline progress in a graphical dashboard         
---cpu, -m Cores and memory for each task default: cpu=1, memory=1024Mi                
+-f        Input file; use - for stdin
+-i        Use a custom docker image default: starpit/sh:0.0.5
+-p        Repeat a given pipeline N times default: number of glob matches
+-g        Emit more debugging output from the cloud-based jobs
+-q        Emit only pipeline output, e.g. for piping into other tasks
+--cpu, -m Cores and memory for each task default: cpu=1, memory=1024Mi
 --as      Execute the pipeline using the settings defined in the given `<profileName>`
 
 Related:

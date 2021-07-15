@@ -58,7 +58,6 @@ You should now see usage information for Super, including the main
 sub-commands:
 - [`super up`](docs/commands/super-up.md)
 - [`super run`](docs/commands/super-run.md)
-- [`super dashboard`](docs/tutorial/basics/super-dashboard.md)
 - [`super browse`](docs/tutorial/basics/super-browse.md)
 
 We suggest first trying [`super up`](docs/commands/super-up.md), which
