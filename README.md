@@ -8,13 +8,12 @@ amount of compute, memory, and disk capacity, scheduling your jobs,
 granting the needed data access authority to your work, and streaming
 out logs &mdash; all in one command: `super run`.
 
-<img title="Super takes a normal UNIX command line, and runs it in parallel, in the Cloud" alt="Super auto-scales normal UNIX command lines" src="docs/blogs/1-Super-Overview/super-lscpu-100-with-progress.gif" align="right" width="600">
+<img title="Super takes a normal UNIX command line, and runs it in parallel, in the Cloud" alt="Super auto-scales normal UNIX command lines" src="docs/blogs/1-Super-Overview/super-lscpu-100-with-progress.gif" align="right" width="680">
 
-Super also automatically injects logic to track the progress of
-**any** job against your Cloud data. You get helpful progress bars for
-free.
+Super also injects logic to track the progress of **any** job against
+your Cloud data. You get helpful progress bars for free.
 
-<img title="Super can copy your Cloud data rapidly, across providers or regions within the Cloud" alt="Animated GIF of super copy" src="docs/blogs/1-Super-Overview/super-cp-5-with-progress.gif" align="right" width="600">
+<img title="Super can copy your Cloud data rapidly, across providers or regions within the Cloud" alt="Animated GIF of super copy" src="docs/blogs/1-Super-Overview/super-cp-5-with-progress.gif" align="right" width="680">
 
 Super links Cloud compute from [IBM Cloud Code
 Engine](https://www.ibm.com/cloud/code-engine) with Cloud data in any
