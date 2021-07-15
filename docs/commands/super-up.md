@@ -1,29 +1,14 @@
 # Using `super up` to validate your setup
 
-Currently, `super run` has a set of prerequisites on your Cloud
-configuration. The `super up` command can check these for you:
+<img title="The super up command helps you with prerequisites" alt="The super up command helps you with prerequisites" src="super-up.gif" align="right">
 
-<img title="The super up command helps you with prerequisites" alt="The super up command helps you with prerequisites" src="super-up.gif" align="right" width="400">
+Before you can employ `super run`, you must ensure that you have
+provisioned a set of prerequisites. The `super up` command can check
+these for you. The gif to the right illustrates `super up` when you
+are all set. If you are missing some prerequisites, you can try `super
+up --fix.`
 
-```sh
-super up
-
-Checking prerequisites for the Super Laptop...
-  ✓ CLI: kubectl
-  ✓ CLI: ibmcloud
-  ✓ CLI: ibmcloud login
-  ✓ CLI plugin: ibmcloud code-engine
-  ✓ CLI plugin: ibmcloud cloud-object-storage
-  ✓ Cloud: ibmcloud target
-  ✓ Cloud: CodeEngine project selected
-  ✓ S3: mounted AWS
-  ✓ S3: ibmcloud object storage credentials
-  ✓ S3: mounted ibmcloud default region
-
-🚀 You are all set to bash the cloud!
-```
-
-## Using `super up --fix` to fix issues
+## Using `super up --fix`
 
 If some of the prerequisites are not satisfied, Super has a `--fix`
 capability. This is still alpha, but is not destructive (it only adds,
@@ -39,14 +24,12 @@ care of both:
 super up --fix
 ```
 
-## Specifying Compute and Storage Options
+### Specifying Compute and Storage Options
 
 When auto-fixing your configuration, Super attempts to make some
 intelligent default choices. For example, if you have only a single
 way to schedule jobs (e.g. you have access to a single IBM CodeEngine
 project), it will assume that choice, without prompt.
-
-### Additional Profile Options
 
 You may override these default choices with the following additional
 options for `super up`, which allow you to create your own custom
