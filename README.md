@@ -42,8 +42,6 @@ performance.
 
 ## Installation
 
-<img title="The super up command helps you with prerequisites" alt="The super up command helps you with prerequisites" src="docs/commands/super-up.gif" align="right" width="400">
-
 The latest build of Super is available
 [here](https://github.com/IBM/super/releases). After you have downloaded
 your release:
@@ -53,6 +51,8 @@ tar jxf Super-darwin-x64.tar.bz2
 export PATH=$PWD/Super-darwin-x64/Super.app/Contents/Resources:$PATH
 super
 ```
+
+<img title="The super up command helps you with prerequisites" alt="The super up command helps you with prerequisites" src="docs/commands/super-up.gif" align="right" width="400">
 
 You should now see usage information for Super, including the main
 sub-commands:
