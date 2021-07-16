@@ -5,8 +5,8 @@
 - [Visually Browsing Cloud Object Storage](./super-browse.md#readme) **[You are here]**
 - [Parallelizing your UNIX Pipeline](./super-parallelism.md#readme)
 - [Injecting Custom Binaries](./super-cloudbin.md#readme)
-- [Examples of parallel analytics against CommonCrawl data](../blogs/2-Super-Examples/README.md#readme)
-- [Automating Periodic Tasks](./super-every.md)
+- [Examples of parallel analytics against CommonCrawl data](../../blogs/2-Super-CommonCrawl#readme)
+- [Automating Periodic Tasks](./super-every.md#readme)
 
 # Visually Browsing Cloud Object Storage via `super browse`
 
