@@ -5,8 +5,8 @@
 - [Visually Browsing Cloud Object Storage](../../tutorial/super-browse.md#readme)
 - [Parallelizing your UNIX Pipeline](../../tutorial/super-parallelism.md#readme)
 - [Injecting Custom Binaries](../../tutorial/super-cloudbin.md#readme)
-- [Examples of parallel analytics against CommonCrawl data](./2-Super-Examples/README.md#readme) **[You are here]**
-- [Automating Periodic Tasks](./super-every.md)
+- [Examples of parallel analytics against CommonCrawl data](./2-Super-CommonCrawl/README.md#readme) **[You are here]**
+- [Automating Periodic Tasks](../../tutorial/super-every.md#readme)
 
 # Analyzing CommonCrawl Data with `grep` and `awk`
 
