@@ -48,7 +48,7 @@ You may also use `curl` to download a build for your platform
 directly. For example, on macOS Intel:
 
 ```sh
-curl -L https://github.com/IBM/super/releases/latest/download/Super-darwin-x64.tar.bz2 | tar jxf -
+curl -L https://supe.run/releases/latest/download/Super-darwin-x64.tar.bz2 | tar jxf -
 export PATH=$PWD/Super-darwin-x64/Super.app/Contents/Resources:$PATH
 super
 ```
