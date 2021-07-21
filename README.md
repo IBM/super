@@ -42,15 +42,18 @@ performance.
 
 ## Installation
 
-The latest build of Super is available
-[here](https://github.com/IBM/super/releases). After you have downloaded
-your release:
+[macOS Intel](https://github.com/IBM/super/releases/latest/download/Super-darwin-x64.tar.bz2) **|** [macOS Apple Silicon](https://github.com/IBM/super/releases/latest/download/Super-darwin-arm64.tar.bz2)
+
+You may also use `curl` to download a build for your platform
+directly. For example, on macOS Intel:
 
 ```sh
-tar jxf Super-darwin-x64.tar.bz2
+curl -L https://github.com/IBM/super/releases/latest/download/Super-darwin-x64.tar.bz2 | tar jxf -
 export PATH=$PWD/Super-darwin-x64/Super.app/Contents/Resources:$PATH
 super
 ```
+
+> For those of you using Apple Silicon, replace `x64` with `arm64`
 
 <img title="The super up command helps you with prerequisites" alt="The super up command helps you with prerequisites" src="docs/commands/super-up.gif" align="right" width="400">
 
