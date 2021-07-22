@@ -218,12 +218,11 @@ pace of the slowest pipeline stage.
 
 ## Further Reading
 
-  1. ["Bash the Cloud"](../1-Super-Overview/#readme), which introduces
+  1. Download Super: [https://supe.run](https://supe.run)
+  2. ["Bash the Cloud"](../1-Super-Overview/#readme), which introduces
      the technique of using UNIX pipelines to analyze large datasets
      in the Cloud.
-  2. "Browsing CommonCrawl with Ease", which will describe a tool that
-     allows you to quickly browse all of CommonCrawl, using a shell in
-     your browser.
-  3. "How to Super-power Bash Using IBM CodeEngine", which will
-     describe the architecture and implementation details of this
-     approach.
+  3. ["Browsing CommonCrawl with
+     Ease"](https://medium.com/the-graphical-terminal/exploring-big-data-with-a-cli-59af31d38756),
+     which will describe a tool that allows you to quickly browse all
+     of CommonCrawl, using a shell in your browser.
