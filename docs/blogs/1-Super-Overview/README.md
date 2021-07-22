@@ -15,8 +15,9 @@ with precision and transparency.
 What would ["the UNIX
 way"](https://en.wikipedia.org/wiki/Unix_philosophy) be for a Cloud
 computer? This animated GIF captures our desire: UNIX pipelines, but
-against Cloud data and compute resources. We will expand on this
-example below.
+against Cloud data and compute resources. We have implemented this
+approach in a tool called Super. You can download it now:
+[https://supe.run](https://supe.run)
 
 ## UNIX Pipelines in the Cloud
 
@@ -137,13 +138,12 @@ a way to disable it when in production, etc.
 
 ## Further Reading
 
-  1. ["Analyzing CommonCrawl Data with `grep` and
+  1. Download Super: [https://supe.run](https://supe.run)
+  2. ["Analyzing CommonCrawl Data with `grep` and
      `awk`"](../2-Super-Examples/#readme), which will go into greater
      detail with three examples that classify large data sets from
      CommonCrawl.
-  2. "Browsing CommonCrawl with Ease", which will describe a tool that
-     allows you to quickly browse all of CommonCrawl, using a shell in
-     your browser.
-  3. "How to Super-power Bash Using IBM CodeEngine", which will
-     describe the architecture and implementation details of this
-     approach.
+  3. ["Browsing CommonCrawl with
+     Ease"](https://medium.com/the-graphical-terminal/exploring-big-data-with-a-cli-59af31d38756),
+     which will describe a tool that allows you to quickly browse all
+     of CommonCrawl, using a shell in your browser.
