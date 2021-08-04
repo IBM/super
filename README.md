@@ -3,37 +3,55 @@
 # Super: A CLI for the Serverless Supercomputer
 
 **Super** runs a normal UNIX command line against Cloud data, using
-Cloud compute resources. Super takes care of provisioning the right
-amount of compute, memory, and disk capacity, scheduling your jobs,
-granting the needed data access authority to your work, and streaming
-out logs &mdash; all in one command: `super run`.
+Cloud compute resources. Super takes care of hooking these complex and
+disparate resources together under one command: [`super
+run`](docs/commands/super-run.md).
 
-<img title="Super takes a normal UNIX command line, and runs it in parallel, in the Cloud" alt="Super auto-scales normal UNIX command lines" src="docs/blogs/1-Super-Overview/super-lscpu-100-with-progress.gif" align="right" width="680">
+<a name="super-copy">
 
-Super also injects logic to **track the progress of any job** against
-your Cloud data. You get helpful progress bars for free.
+## A Super Way to Copy
 
-<img title="Super can copy your Cloud data rapidly, across providers or regions within the Cloud" alt="Animated GIF of super copy" src="docs/blogs/1-Super-Overview/super-cp-5-with-progress.gif" align="right" width="680">
+[<img align="right" src="docs/examples/images/runvis2.png"
+height="104">](docs/examples/example2.md)
 
-Super links Cloud compute to **any Kubernetes cluster**, and links to
-Cloud data to **any S3 provider**. Out of the box, it has integrations
-with [IBM Cloud Code Engine](https://www.ibm.com/cloud/code-engine),
-which offers a fast way to tap into a very large Kubernetes
-cluster. It also can transparently hook up with [IBM Cloud Object
-Storage](https://www.ibm.com/cloud/object-storage).
+For example, say you want to **copy a set of files** from one place in
+the Cloud to another. A quick `super run` can make this happen:
 
-<a name="examples"></a>
-## Six Super Powers
+```sh
+super run -- cp /s3/ibm/default/src/foo*.txt /s3/aws/dst
+```
 
-Super can process data via Cloud-based pipelines in a variety of ways:
-e.g. you may **auto-scale** across a set of input Cloud data, **join**
-the results of each parallel Cloud job and display the results on your
-local console, **redirect** output back into Cloud storage, or execute
-pipelines **periodically**. All with familiar shell syntax and
-performance.
+Behind the scenes, Super spawns Cloud Compute to mediate the transfer
+from one Data location to another. If it recognizes that the
+["glob"](https://en.wikipedia.org/wiki/Glob_(programming)) pattern
+`foo*.txt` matches 5 files, it will spawn around 5 Cloud jobs.
 
-**Click on one of these images for more details on that use case.**
+> There is no need to code to the Cloud API of the week to make any of
+> this happen.
 
+Because Super intelligently parses out your command line, it can
+automatically inject progress trackers. Super can **track the progress
+of any job** against your Cloud data.
+
+<img title="Super can copy
+your Cloud data rapidly, across providers or regions within the Cloud"
+alt="Animated GIF of super copy"
+src="docs/blogs/1-Super-Overview/super-cp-5-with-progress.gif">
+
+Super leverges **any Kubernetes cluster** for Compute and **any S3
+provider** for Data. If you wish to target a very large cluster, Super
+integrates with [IBM Cloud Code
+Engine](https://www.ibm.com/cloud/code-engine). It also can hook your
+Compute jobs up with [IBM Cloud Object
+Storage](https://www.ibm.com/cloud/object-storage). The [`super
+up`](docs/commands/super-up.md) command gives you an easy way to
+leverage both.
+
+**[Take me to the Installation Instructions](#installation)**
+
+## What Other Kinds of Pipelines Can Super Run?
+
+Click on an image for more detail on that use case.
 
 [<img src="docs/examples/images/runvis1.png" height="104">](docs/examples/example1.md)
 [<img src="docs/examples/images/runvis2.png" height="104">](docs/examples/example2.md)
@@ -44,9 +62,9 @@ performance.
 
 ## Installation
 
-[macOS Intel](https://github.com/IBM/super/releases/latest/download/Super-darwin-x64.tar.bz2) **|** [macOS Apple Silicon](https://github.com/IBM/super/releases/latest/download/Super-darwin-arm64.tar.bz2)
+<!-- [macOS Intel](https://github.com/IBM/super/releases/latest/download/Super-darwin-x64.tar.bz2) **|** [macOS Apple Silicon](https://github.com/IBM/super/releases/latest/download/Super-darwin-arm64.tar.bz2) -->
 
-🍺 For macOS users, you may use Homebrew to install Super:
+For macOS users, you may use Homebrew to install Super:
 
 ```sh
 brew tap IBM/super https://github.com/IBM/super
@@ -54,19 +72,42 @@ brew install super
 super
 ```
 
+You should now see usage information for Super, including the main
+sub-command: [`super run`](docs/commands/super-run.md).
+
+## Getting Started: Using `super run` to submit pipelines to Cloud Compute
+
+Out of the box, `super run` will use **your current Kubernetes
+context** as the target for Compute, and will have read-only access to
+public S3 buckets. 
+
+If this works for you, then try `super run -p5 -- echo
+hello`. [Above](#super-copy), we used a glob pattern to specify the
+Cloud jobs we needed; here, since we are not pulling in Cloud data, we
+instead use `-p5` to specify that we want to execute the given command
+line as five Cloud jobs.
+
+<img title="Super takes a normal UNIX command line, and runs it in parallel, in the Cloud" alt="Super auto-scales normal UNIX command lines" src="docs/blogs/1-Super-Overview/super-lscpu-100-with-progress.gif">
+
+### Using `super browse` to explore input Cloud Data
+
+To browse for interesting [CommonCrawl](https://commoncrawl.org/)
+input data, you may use [`super browse
+cc`](docs/tutorial/basics/super-browse.md). Super pipelines can access
+S3 data via a pseudo `/s3` filepath; e.g. `/s3/aws/commoncrawl` is the
+prefix for CommonCrawl data.
+
+### Using `super up` to connect to your Cloud Provider
+
 <img title="The super up command helps you with prerequisites" alt="The super up command helps you with prerequisites" src="docs/commands/super-up.gif" align="right" width="400">
 
-You should now see usage information for Super, including the main
-sub-commands:
-- [`super up`](docs/commands/super-up.md)
-- [`super run`](docs/commands/super-run.md)
-- [`super browse`](docs/tutorial/basics/super-browse.md)
-
-We suggest first trying [`super up`](docs/commands/super-up.md), which
-will validate your prerequisites. If you are good to go, then you can
-try `super run -p5 -- echo hello`, which will execute that command as
-five Cloud jobs. If this all looks good, then proceed to the
-[**Getting to Know Super**](docs/tutorial/basics#readme) tutorial.
+The [`super up`](docs/commands/super-up.md) command will attempt to
+connect `super run` to your AWS credentials and to IBM Cloud. The
+latter allows `super run` to scale to a large Kubernetes cluster with
+hundreds of nodes, via [IBM Cloud Code
+Engine](https://www.ibm.com/cloud/code-engine); `super up` can also
+connect you to your [IBM Cloud Object
+Storage](https://www.ibm.com/cloud/object-storage) instances.
 
 ## Tutorials
 
