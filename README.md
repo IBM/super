@@ -2,9 +2,9 @@
 
 # Super: A CLI for the Serverless Supercomputer
 
-**Super** offers a zero-config and zero-code entry to your Cloud.
-Super runs a normal UNIX command line against Cloud data, using Cloud
-compute resources. Super takes care of hooking these complex and
+**Super** offers a zero-config and zero-code entry to your Cloud. It
+does so by running **normal UNIX command lines** against Cloud data,
+using Cloud compute. Super takes care of hooking these complex and
 disparate resources together under one command: [`super
 run`](docs/commands/super-run.md).
 
@@ -15,20 +15,20 @@ run`](docs/commands/super-run.md).
 [<img align="right" src="docs/examples/images/runvis2.png"
 height="104">](docs/examples/example2.md)
 
-For example, say you want to **copy a set of files** from one place in
-the Cloud to another. A quick `super run` can make this happen:
+For example, Super can **copy a set of files** from one place in the
+Cloud to another.
 
 ```sh
 super run -- cp /s3/ibm/default/src/foo*.txt /s3/aws/dst
 ```
 
-Behind the scenes, Super spawns Cloud Compute to mediate the transfer
-from one Data location to another. If it recognizes that the
+Behind the scenes, Super spawns Cloud Compute to mediate the
+Cloud-to-Cloud data transfer. Thus, if the given
 ["glob"](https://en.wikipedia.org/wiki/Glob_(programming)) pattern
-`foo*.txt` matches 5 files, it will spawn around 5 Cloud jobs.
-
-> There is no need to code to the Cloud API of the week to make any of
-> this happen.
+`foo*.txt` matches 5 files, it will spawn between 1 to 5 Cloud jobs,
+and deal with the set up and shutdown, with granting each job the
+least privilege needed to transfer the subset of those matched files
+assigned to it, and more!
 
 Because Super intelligently parses out your command line, it can
 automatically inject progress trackers. Super can **track the progress
@@ -47,6 +47,9 @@ Compute jobs up with [IBM Cloud Object
 Storage](https://www.ibm.com/cloud/object-storage). The [`super
 up`](docs/commands/super-up.md) command gives you an easy way to
 leverage both.
+
+> There is no need to code to the Cloud API of the week to make any of
+> this happen.
 
 **[Take me to the Installation Instructions](#installation)**
 
