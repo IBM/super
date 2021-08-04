@@ -2,8 +2,9 @@
 
 # Super: A CLI for the Serverless Supercomputer
 
-**Super** runs a normal UNIX command line against Cloud data, using
-Cloud compute resources. Super takes care of hooking these complex and
+**Super** offers a zero-config and zero-code entry to your Cloud.
+Super runs a normal UNIX command line against Cloud data, using Cloud
+compute resources. Super takes care of hooking these complex and
 disparate resources together under one command: [`super
 run`](docs/commands/super-run.md).
 
