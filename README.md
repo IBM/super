@@ -104,11 +104,22 @@ line as five Cloud jobs.
 
 ### Using `super browse` to explore input Cloud Data
 
+<img align="right" src="docs/tutorial/basics/commoncrawling.gif" width="400">
+
 To browse for interesting [CommonCrawl](https://commoncrawl.org/)
 input data, you may use [`super browse
 cc`](docs/tutorial/basics/super-browse.md). Super pipelines can access
 S3 data via a pseudo `/s3` filepath; e.g. `/s3/aws/commoncrawl` is the
 prefix for CommonCrawl data.
+
+### Using `super target` to configure your choice of Cloud Compute
+
+By default, `super run` will target jobs against your currently
+selected Kubernetes context. You may switch contexts using standard
+`kubectl` commands. Strictly for convenience, Super offers `super
+target` to smooth the enumeration and selection of a context. In
+particular, if you are using IBM Cloud Code Engine, the `super target`
+command seamlessly integrates with CodeEngine projects.
 
 ### Using `super up` to connect to your Cloud Provider
 
