@@ -23,16 +23,15 @@ super run -- cp /s3/ibm/default/src/foo*.txt /s3/aws/dst
 ```
 
 Behind the scenes, Super spawns Cloud Compute to mediate the
-Cloud-to-Cloud data transfer. Thus, if the given
-["glob"](https://en.wikipedia.org/wiki/Glob_(programming)) pattern
-`foo*.txt` matches 5 files, it will spawn between 1 to 5 Cloud jobs,
-and deal with the set up and shutdown, with granting each job the
-least privilege needed to transfer the subset of those matched files
-assigned to it, and more!
+Cloud-to-Cloud data transfer. It uses
+["glob"](https://en.wikipedia.org/wiki/Glob_(programming)) patterns to
+determine how many concurrent jobs to run. For example, if `foo*.txt`
+matches 5 files, Super spawns a set of concurrent jobs, grants each
+job the least privilege to access its assigned files, and more!
 
-Because Super intelligently parses out your command line, it can
-automatically inject progress trackers. Super can **track the progress
-of any job** against your Cloud data.
+Because Super intelligently parses your command line, it can
+automatically inject progress trackers. Super **tracks the progress of
+any job** against your Cloud data.
 
 <img title="Super can copy
 your Cloud data rapidly, across providers or regions within the Cloud"
@@ -48,10 +47,10 @@ Storage](https://www.ibm.com/cloud/object-storage). The [`super
 up`](docs/commands/super-up.md) command gives you an easy way to
 leverage both.
 
-> There is no need to code to the Cloud API of the week to make any of
-> this happen.
+**There is no need to code to the Cloud API of the week to make any of
+this happen.**
 
-**[Take me to the Installation Instructions](#installation)**
+:rocket: **[Take me to the Installation Instructions](#installation)**
 
 ## What Other Kinds of Pipelines Can Super Run?
 
@@ -66,15 +65,15 @@ Click on an image for more detail on that use case.
 
 ## Installation
 
-<!-- [macOS Intel](https://github.com/IBM/super/releases/latest/download/Super-darwin-x64.tar.bz2) **|** [macOS Apple Silicon](https://github.com/IBM/super/releases/latest/download/Super-darwin-arm64.tar.bz2) -->
+[macOS Intel](https://github.com/IBM/super/releases/latest/download/Super-darwin-x64.tar.bz2) **|** [macOS Apple Silicon](https://github.com/IBM/super/releases/latest/download/Super-darwin-arm64.tar.bz2)
 
-For macOS users, you may use Homebrew to install Super:
-
-```sh
+|macOS|Others|
+|-----|------|
+|```sh
 brew tap IBM/super https://github.com/IBM/super
 brew install super
 super
-```
+```|-----|
 
 You should now see usage information for Super, including the main
 sub-command: [`super run`](docs/commands/super-run.md).
