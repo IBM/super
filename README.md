@@ -65,16 +65,26 @@ Click on an image for more detail on that use case.
 
 ## Installation
 
-[macOS Intel](https://github.com/IBM/super/releases/latest/download/Super-darwin-x64.tar.bz2) **|** [macOS Apple Silicon](https://github.com/IBM/super/releases/latest/download/Super-darwin-arm64.tar.bz2)
+<!--[macOS Intel](https://github.com/IBM/super/releases/latest/download/Super-darwin-x64.tar.bz2) **|** [macOS Apple Silicon](https://github.com/IBM/super/releases/latest/download/Super-darwin-arm64.tar.bz2)-->
 
-|macOS|Others|
-|-----|------|
-|```sh
+<table>
+  <tr><th>macOS</th><th>Others</th></tr>
+  <tr>
+    <td>
+
+```sh
 brew tap IBM/super https://github.com/IBM/super
 brew install super
 super
-```|-----|
+```
 
+</td>
+<td>
+Coming soon
+</td>
+  </tr>
+</table>
+        
 You should now see usage information for Super, including the main
 sub-command: [`super run`](docs/commands/super-run.md).
 
