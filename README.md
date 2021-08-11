@@ -1,5 +1,7 @@
 #### [Installation](#installation) | [Tutorials](#tutorials) | [Blogs](#blogs)
 
+<img align="right" src="docs/super.png" width="220">
+
 # Super: A CLI for the Serverless Supercomputer
 
 **Super** offers a zero-config and zero-code entry to your Cloud. It
