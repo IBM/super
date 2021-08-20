@@ -1,5 +1,5 @@
 cask "super" do
-  version "1.6.8"
+  version "1.6.9"
 
   name "Super"
   desc "CLI for the Serverless Supercomputer"
@@ -7,11 +7,11 @@ cask "super" do
 
   if Hardware::CPU.intel?
     url "https://github.com/IBM/super/releases/download/v#{version}/Super-darwin-x64.tar.bz2"
-    sha256 "c22909a4db4b49c4a6a9508460a0d5a83bdc421de2e1ffd8709a2a00ce8be47a"
+    sha256 "434ea392af01c357e8bacb9ca0246c053d12275ccfe4a06a98140350ce1b9e8a"
     app "Super-darwin-x64/Super.app"
   else
     url "https://github.com/IBM/super/releases/download/v#{version}/Super-darwin-amd64.tar.bz2"
-    sha256 "06197b87b1b34bfef2c56b4cdaa1a22af5a95a35fd80c3e85bd9c0a8ba3957c7"
+    sha256 "48191481feacd75ee9f1d43941f9177f9644a4792b5dec3a008513a8b53f970a"
     app "Super-darwin-amd64/Super.app"
   end
 
