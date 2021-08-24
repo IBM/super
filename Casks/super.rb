@@ -7,11 +7,11 @@ cask "super" do
 
   if Hardware::CPU.intel?
     url "https://github.com/IBM/super/releases/download/v#{version}/Super-darwin-x64.tar.bz2"
-    sha256 "584e22a4591a51c95f0469885af43c3a10db6eb53454cc792643581abc1407d6"
+    sha256 "2d1b2eb720f1c7f9e0762bdaf98f9d37647e8026962e832316912345200a2049"
     app "Super-darwin-x64/Super.app"
   else
     url "https://github.com/IBM/super/releases/download/v#{version}/Super-darwin-amd64.tar.bz2"
-    sha256 "ac23013d47fe40b9a1ca5aabde720db708f753c8a1e48d9f88e0ec5490cc0a26"
+    sha256 "2a36f8193f8cedd606fe9daafc330299a4cd0cd7bb82ace58a94c8822c979147"
     app "Super-darwin-amd64/Super.app"
   end
 
