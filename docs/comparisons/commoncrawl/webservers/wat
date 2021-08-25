@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+
+while getopts "r:" OPTION; do
+    case "$1" in
+    -r)
+        break
+        ;;
+    esac
+    shift
+done
+
+if [ "$OPTARG" ]; then
+    # e.g. grep -Eo '"Server":"[^"]+"' } | sed -E -e s/"Server":|"//g
+    grep -Eo '"'$OPTARG'":"[^"]+"' | sed -E -e 's/"'$OPTARG'":|"//g'
+fi
