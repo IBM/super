@@ -12,6 +12,6 @@ cat $IN | \
     ./lang.sh | \
     tr -d ' "}' | \
     tr ',' '\012' | \
-    ../a.out | \
+    ./histo | \
     sort -n -r | \
     head
