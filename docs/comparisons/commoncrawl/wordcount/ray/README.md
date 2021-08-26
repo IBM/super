@@ -12,6 +12,6 @@ compressed WET file.
 ## Usage
 
 ```sh
-if [ ! -f ../CC-MAIN-20170116095120-00055-ip-10-171-10-70.ec2.internal.warc.wet.gz ]; then curl -LO https://commoncrawl.s3.amazonaws.com/crawl-data/CC-MAIN-2017-04/segments/1484560280292.50/wet/CC-MAIN-20170116095120-00055-ip-10-171-10-70.ec2.internal.warc.wet.gz; fi
+if [ ! -f ../CC-MAIN-20170116095120-00055-ip-10-171-10-70.ec2.internal.warc.wet.gz ]; then (cd .. && curl -LO https://commoncrawl.s3.amazonaws.com/crawl-data/CC-MAIN-2017-04/segments/1484560280292.50/wet/CC-MAIN-20170116095120-00055-ip-10-171-10-70.ec2.internal.warc.wet.gz); fi
 ./run.sh ./wordcount2.py
 ```
