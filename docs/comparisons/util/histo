@@ -1,0 +1,2 @@
+awk '{n[$1]++} END {for (x in n) print n[x], x}'
+# | sort -k1 -n -r

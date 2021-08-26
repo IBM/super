@@ -4,7 +4,7 @@
 # coreutils`, which provides `gdate`. This script assumes you have
 # done so.
 
-if [[ uname = Darwin ]]; then
+if [[ $(uname) = Darwin ]]; then
     DATE=gdate
 else
     # this also assumes that you have installed coredutils for linux
