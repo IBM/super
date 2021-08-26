@@ -9,7 +9,7 @@ import json
 file = r"CC-MAIN-20170116095121-00570-ip-10-171-10-70.ec2.internal.warc.wat.gz"
 file = r"CC-MAIN-20210304235759-20210305025759-00616.warc.wat.gz"
 file = r"yo.wat.gz"
-file="CC-MAIN-20210304235759-20210305025759-00616.warc.wat.gz"
+file=r"CC-MAIN-20210304235759-20210305025759-00616.warc.wat.gz"
 
 server_counts = Counter()
 #with gzip.open(file, "r") as gz, io.BufferedReader(gz) as f:
