@@ -1,4 +1,4 @@
-#### [Installation](#installation) | [Tutorials](#tutorials) | [Blogs](#blogs)
+#### [Installation](#installation) | [Blogs](#blogs) | [Tutorials](#tutorials)
 
 # Super: A CLI for the Serverless Supercomputer
 
@@ -7,6 +7,15 @@ does so by running **normal UNIX command lines** against Cloud data,
 using Cloud compute. Super takes care of hooking these complex and
 disparate resources together under one command: [`super
 run`](docs/commands/super-run.md).
+
+:rocket: **[Take me to the Installation Instructions](#installation)**
+
+## Blogs
+
+- [Exploring Big Data with a CLI](https://medium.com/the-graphical-terminal/exploring-big-data-with-a-cli-59af31d38756)
+- [Bash the Cloud](https://medium.com/cloud-computer/bash-the-cloud-3d476b7e4d7c)
+- [Analyzing Big Data with `grep` and `awk`](https://medium.com/cloud-computer/analyzing-big-data-with-grep-and-awk-c07d362b6ab8)
+- [Using IBM Cloud Code Engine to Analyze Big Data without Writing a Single Line of Code](https://medium.com/cloud-computer/using-ibm-cloud-code-engine-to-analyze-big-data-without-writing-a-single-line-of-code-12e46a24471c)
 
 <a name="super-copy">
 
@@ -49,8 +58,6 @@ leverage both.
 
 **There is no need to code to the Cloud API of the week to make any of
 this happen.**
-
-:rocket: **[Take me to the Installation Instructions](#installation)**
 
 ## What Other Kinds of Pipelines Can Super Run?
 
@@ -136,9 +143,3 @@ Storage](https://www.ibm.com/cloud/object-storage) instances.
 ## Tutorials
 
 - [Getting to Know Super](docs/tutorial/basics/#readme)
-
-## Blogs
-
-- [Exploring Big Data with a CLI](https://medium.com/the-graphical-terminal/exploring-big-data-with-a-cli-59af31d38756)
-- [Bash the Cloud](docs/blogs/1-Super-Overview#readme)
-- [Analyzing CommonCrawl with Bash](docs/blogs/2-Super-CommonCrawl#readme)
