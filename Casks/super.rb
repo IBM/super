@@ -1,5 +1,5 @@
 cask "super" do
-  version "1.6.18"
+  version "1.6.19"
 
   name "Super"
   desc "CLI for the Serverless Supercomputer"
