@@ -11,7 +11,7 @@
 # The Super Way to Parallelize your UNIX Pipeline
 
 > **Note**: Make sure to verify you are good to go, by first running
-> [`super up`](./super-up.md).
+> [`super up`](../../commands/super-up.md).
 
 You probably desire to run many commands in parallel. Here, you have
 two options:
