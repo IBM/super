@@ -30,7 +30,7 @@ Separately, you may be interested in the [detailed usage guide for
 ## Getting Started with a Few Simple Examples
 
 > **Note**: Make sure to verify you are good to go, by first running
-> [`super up`](./super-up.md).
+> [`super up`](../../commands/super-up.md).
 
 The command `lscpu` provides information about the CPU your on which
 your command executes. Using `super run`, we can easily run this in
