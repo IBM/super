@@ -6,7 +6,7 @@
 - [Parallelizing your UNIX Pipeline](../../tutorial/super-parallelism.md#readme)
 - [Injecting Custom Binaries](../../tutorial/super-cloudbin.md#readme)
 - [Examples of parallel analytics against CommonCrawl data](./2-Super-CommonCrawl/README.md#readme) **[You are here]**
-- [Automating Periodic Tasks](../../tutorial/super-every.md#readme)
+- [Automating Periodic Tasks](../../tutorial/basics/super-every.md#readme)
 
 # Analyzing CommonCrawl Data with `grep` and `awk`
 
