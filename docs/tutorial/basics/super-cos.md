@@ -11,7 +11,7 @@
 # The Super Way to Interact with Cloud Object Storage
 
 > **Note**: Make sure to verify you are good to go, by first running
-> [`super up`](./super-up.md).
+> [`super up`](../../commands/super-up.md).
 
 You may use filepaths of the form `/s3/ibm/...` to specify folders
 within your Cloud Object Storage. Most normal filesystem commands will
