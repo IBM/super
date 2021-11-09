@@ -10,9 +10,9 @@ cask "super" do
     sha256 "78902a5b2f81f9f657bf86c469fff1e218815bdd69d61c31f66fa22f4fc36a7e"
     app "Super-darwin-x64/Super.app"
   else
-    url "https://github.com/IBM/super/releases/download/v#{version}/Super-darwin-amd64.tar.bz2"
+    url "https://github.com/IBM/super/releases/download/v#{version}/Super-darwin-arm64.tar.bz2"
     sha256 "ba1b090e82fb9401adabd36ed3c157421fbd67d8a21086bb742c4d5bf33e46f4"
-    app "Super-darwin-amd64/Super.app"
+    app "Super-darwin-arm64/Super.app"
   end
 
   livecheck do
