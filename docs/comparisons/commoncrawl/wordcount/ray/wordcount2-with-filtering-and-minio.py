@@ -13,8 +13,6 @@ client = Minio("s3.amazonaws.com", "", "")
 
 ray.init()
 #ray.init(address='auto')
-#ray.init(address='auto', _redis_password='5241590000000000')
-
 
 wordcount=0
 @ray.remote(num_cpus=1)
